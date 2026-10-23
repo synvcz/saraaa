@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "SARA HIMEJI"
+description = "A responsive cinematic character study devoted exclusively to Sara Himeji, told through six connected scenes with accessible scroll-led motion and carefully sourced solo artwork."
+version = "1.0.0"
+id = "artifacts/sara-himeji"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24460
+
+[services.development]
+run = "pnpm --filter @workspace/sara-himeji run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/sara-himeji", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/sara-himeji/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24460"
+BASE_PATH = "/"

@@ -1,0 +1,335 @@
+SARA HIMEJI — An Interactive Cinematic Character Study
+
+Build a complete, polished, responsive website dedicated exclusively to Sara Himeji (姫路 紗良) from Rascal Does Not Dream of Santa Claus.
+
+The website's title, branding, and primary heading must be SARA HIMEJI.
+
+The website should feel like a cinematic digital film about a character: expressive, intimate, visually beautiful, interactive, and thoughtfully written. It should not resemble a generic anime fan page, an encyclopedia template, or a corporate landing page.
+
+The experience must tell a story through six connected scenes. Each scene must have its own purpose, composition, atmosphere, and animation.
+
+ABSOLUTE RULE: SARA HIMEJI ONLY
+
+Sara Himeji must be the only character depicted anywhere on the website.
+
+Never depict another character in any form, including:
+
+- Solo portraits of other characters.
+- Group illustrations or ensemble artwork.
+- Characters in the background of an illustration.
+- Silhouettes, reflections, shadows, or partial figures of other characters.
+- Other characters in image thumbnails, galleries, decorative backgrounds, loading sequences, or mobile layouts.
+
+Never use an official illustration that includes another character, even if Sara is the main subject. Only select official artwork in which Sara is the sole depicted character.
+
+Do not include other characters' names or use other characters for comparison. The series title may be mentioned as context, but all character-focused writing, imagery, and presentation must remain exclusively about Sara.
+
+If a suitable official image cannot be verified, use a deliberate typographic or CSS-based composition. Never substitute another character.
+
+This restriction takes priority over every visual suggestion elsewhere in this prompt.
+
+1. Visual identity and atmosphere
+
+Use this color palette:
+
+- Near-black: #101114
+- Warm ivory: #F0EEE9
+- Muted lavender: #B5A7C9
+- Soft graphite: #777681
+
+The overall style should be editorial, cinematic, minimal, and expressive.
+
+Use:
+
+- Oversized, refined display typography.
+- Clean and readable body text.
+- Small monospace labels for scene numbers and captions.
+- Generous negative space.
+- Asymmetrical layouts.
+- Delicate dividing lines.
+- Subtle film grain.
+- Controlled image cropping and clipping masks.
+- Soft transitions between dark and light backgrounds.
+- Restrained lavender accents.
+
+Avoid generic SaaS layouts, repetitive cards, excessive glassmorphism, neon gradients, unnecessary decorative elements, and excessive rounded rectangles.
+
+The design should feel carefully art-directed. Every element should have a reason to exist.
+
+2. Authentic artwork only
+
+Use authentic, officially published Sara Himeji artwork from legitimate rights-holder sources.
+
+Start researching here:
+
+- https://ao-buta.com/
+- https://www.aniplex.co.jp/
+- https://news.aniplex.co.jp/
+- https://www.aniplex.co.jp/lineup/ao-buta-randoseru/news/detail/?id=67394
+
+Verify the origin of every asset and confirm that Sara is the only character depicted. Check applicable usage restrictions and provide attribution where practical.
+
+Never generate images. Never use AI-generated artwork, fan art, fabricated images, unrelated characters, or invented asset URLs. Do not bypass access restrictions.
+
+If official artwork is unavailable, create an intentional fallback using typography, negative space, CSS gradients, and layout. Do not leave broken image icons or empty image boxes.
+
+Organize image references and attribution information so assets can be replaced easily.
+
+3. Writing style: affectionate, thoughtful, and natural
+
+The writing should convey genuine appreciation for Sara.
+
+Use words such as:
+
+- adorable
+- cute
+- charming
+- endearing
+- sweet
+- lovable
+- delightful
+
+Use these expressions occasionally, where they genuinely fit the context. Do not force them into every section or repeat them mechanically.
+
+The site should feel affectionate without becoming childish, excessively sugary, or melodramatic. Balance cute observations with thoughtful character analysis and mature editorial writing.
+
+For example, a sentence might describe a particular expression as adorable, or discuss an endearing quality that contributes to her charm. Such observations must be grounded in the actual character and available evidence.
+
+Do not invent personal experiences, memories, feelings, or reasons on behalf of the website's creator.
+
+Keep factual information accurate. Distinguish established story information from personal interpretation.
+
+Do not invent dialogue, quotations, biography, events, or character motivations.
+
+4. The six-scene narrative
+
+These are six connected scenes, not six interchangeable content sections. Each must tell the visitor something different.
+
+SCENE 01 — THE FIRST FRAME
+
+Purpose: Introduce Sara and establish curiosity.
+
+Begin with a nearly black screen and a restrained scene identifier.
+
+Reveal the title:
+
+SARA HIMEJI
+
+Then reveal:
+
+姫路 紗良
+
+Gradually reveal an authentic official portrait of Sara alone, using a refined clipping mask, controlled scale transition, or another carefully designed reveal.
+
+Use minimal text. This scene is about presence, curiosity, and anticipation rather than explaining her entire character.
+
+Include a subtle cue encouraging the visitor to scroll.
+
+The visitor should understand immediately that this website is dedicated to Sara and feel curious about what follows.
+
+Atmosphere: near-black, understated, cinematic.
+
+SCENE 02 — HER INTRODUCTION
+
+Purpose: Explain who Sara is.
+
+Transition into a warmer, more open layout using warm ivory and near-black.
+
+Include a substantial section titled About Sara. Introduce her identity, relevant story context, personality, and established character traits.
+
+Use reliable official sources for factual details. Research where possible, but never fabricate information if sources cannot be accessed.
+
+This section must genuinely inform a visitor who does not already know Sara. Do not reduce it to a few decorative sentences.
+
+Use an editorial layout featuring Sara's verified solo portrait alongside readable text.
+
+The visitor should leave this scene with a clear foundation for understanding her.
+
+Atmosphere: warm, welcoming, informative.
+
+SCENE 03 — BEYOND THE SURFACE
+
+Purpose: Explore what makes Sara interesting beyond her initial impression.
+
+Discuss her characterization, personality, behavior, and narrative role in greater depth.
+
+Examine meaningful nuances and explain why they may be interesting to observe. Separate factual information from interpretation.
+
+On desktop, consider keeping Sara's solo portrait visually anchored while the text beside it changes as the visitor scrolls. On mobile, adapt the sequence naturally.
+
+Use restrained text reveals, subtle scale changes, and shifts in composition.
+
+The visitor should begin to understand Sara as a character worth thinking about, rather than simply recognizing her appearance.
+
+Atmosphere: contemplative, curious, analytical.
+
+SCENE 04 — THE DETAILS
+
+Purpose: Encourage the visitor to pay closer attention.
+
+Create a visually experimental sequence focused on specific, verified details of Sara's appearance, presentation, expressions, and characterization.
+
+Use authentic solo artwork, deliberate image crops, large typography, captions, fine lines, and generous spacing.
+
+Where appropriate, include occasional observations describing something as cute, adorable, charming, or endearing. These words must feel natural and specific, not like repetitive filler.
+
+Do not invent hidden meanings or present subjective interpretations as canon.
+
+Avoid a grid of identical cards. Let each detail receive its own visual space and pacing.
+
+The visitor should leave this scene noticing things they might otherwise have overlooked.
+
+Atmosphere: playful in small moments, visually expressive, attentive.
+
+SCENE 05 — WHY SARA
+
+Purpose: Reveal the creator's perspective and the reason this website exists.
+
+This is the emotional center of the entire experience.
+
+The previous scenes explain Sara. This scene explores why the creator chose to dedicate a website to her.
+
+Create a quieter, more intimate composition with generous negative space, restrained typography, and slower transitions.
+
+Use the following as editable placeholder copy:
+
+“Not one scene. Not one trait. Not one reason that can be neatly separated from the rest. Perhaps it was the combination of everything that made me choose her.”
+
+This passage is provisional. Do not claim that it describes the creator's confirmed personal feelings.
+
+Keep the content easy to edit so the creator can later replace it with their actual reasons.
+
+Possible writing directions include what first attracted the creator's attention, which aspects of Sara's characterization stayed with them, or why they wanted to explore her through this website. Do not assume or fabricate the answers.
+
+Let the writing breathe. Avoid excessive animations and melodramatic effects.
+
+The visitor should understand that this is not merely an informational website: it exists because someone wanted to express their appreciation for Sara.
+
+Atmosphere: intimate, sincere, reflective.
+
+SCENE 06 — THE LAST FRAME
+
+Purpose: Bring the experience full circle.
+
+Gradually simplify the composition and return to the near-black atmosphere of the opening.
+
+Reveal:
+
+SARA HIMEJI
+
+姫路 紗良
+
+Where suitable official solo artwork is available, echo the opening's image-reveal technique with a subtle variation. Otherwise, use a strong typographic composition.
+
+End with a concise, reflective closing statement. Avoid a long concluding essay.
+
+Provide a simple control to return to the beginning.
+
+Include a small disclaimer stating that the website is an unofficial fan-made project and is not affiliated with Aniplex, KADOKAWA, or the series' production committee.
+
+The visitor should finish with a clearer understanding of Sara and the creator's perspective.
+
+Atmosphere: quiet, resolved, memorable.
+
+5. Animation and scrolling
+
+Motion is fundamental to this website. Do not use the same fade-in effect for every section.
+
+Combine techniques such as:
+
+- Staged title and text reveals.
+- Clipping-mask image transitions.
+- Staggered labels and captions.
+- Subtle parallax and scale effects.
+- Changes in background tone and lighting.
+- Scroll-triggered changes in composition.
+- Sticky or pinned scenes where appropriate.
+- A restrained scroll-progress indicator.
+
+Use Intersection Observer and CSS transitions where practical. Use an animation library only if it provides a meaningful benefit.
+
+Keep animations smooth and lightweight. Avoid continuous motion that distracts from reading.
+
+Respect prefers-reduced-motion. All content must remain accessible when animations are reduced or disabled.
+
+Do not let animation block navigation or prevent visitors from reading the content.
+
+6. Navigation and interaction
+
+Provide minimal, elegant navigation to the major scenes.
+
+Use working anchor links, clear active-section feedback, and an unobtrusive progress indicator.
+
+Make the navigation responsive. Ensure all controls are keyboard accessible and have visible focus states.
+
+Do not make essential functionality dependent on hover.
+
+Avoid adding unrelated interactive features just to make the website appear more complicated.
+
+7. Responsive design
+
+Design mobile-first and refine for desktop.
+
+Test approximately 320, 375, 390, and 430 pixel widths, as well as tablet, laptop, and desktop sizes.
+
+Ensure:
+
+- No horizontal overflow.
+- No clipped headings or overlapping elements.
+- Correct image proportions and intentional crops.
+- Readable paragraph widths and comfortable line spacing.
+- Touch targets ideally at least 44 × 44 CSS pixels.
+- No hover-only interactions.
+- Appropriate contrast and keyboard accessibility.
+- A natural mobile reading experience.
+
+Do not simply shrink the desktop design. Adapt pinned scenes, image placement, and animation pacing to smaller screens.
+
+8. Technical implementation
+
+If starting from scratch, use React, TypeScript, and Vite unless there is a compelling reason not to.
+
+Use maintainable components and a clean project structure. Keep content, styling, animation logic, and asset references organized.
+
+Use semantic HTML, accessible controls, meaningful image alt text, and appropriate metadata.
+
+Avoid unnecessary dependencies, excessive bundle size, and avoidable layout shifts.
+
+This is a frontend website. Do not add a backend, database, authentication, or unrelated features.
+
+Keep the project portable outside Replit. Include conventional project files, an appropriate .gitignore, and a README.md with installation, development, and production build instructions.
+
+Prepare the Vite configuration so the project can be deployed to GitHub Pages under a repository path if GitHub Pages is chosen. Explain the required base path and deployment setup in the README. Do not assume the final repository URL before it is known.
+
+Do not expose secrets or credentials.
+
+Do not create a GitHub repository, configure a Git remote, or push code during this build task. I will review the project before authorizing publication.
+
+9. Quality assurance
+
+Build the actual working website, not just a static mockup.
+
+Run the application, inspect the browser preview, and refine the experience from the opening through the footer.
+
+Verify:
+
+- The title and branding are exactly SARA HIMEJI.
+- Sara is the only character depicted.
+- No group artwork or illustrations containing other characters are used.
+- All artwork is authentic, official, and appropriately sourced.
+- The About Sara section is substantial and accurate.
+- All six scenes have distinct purposes and visual compositions.
+- Affectionate adjectives appear naturally and sparingly.
+- Personal placeholder writing is editable and is not presented as confirmed biography.
+- Navigation and scrolling interactions work.
+- Mobile and desktop layouts are polished.
+- Reduced-motion preferences are respected.
+- No broken images, obvious console errors, or production build failures remain.
+- The README explains how to run and build the project.
+- GitHub Pages configuration is documented and suitable for the eventual repository path.
+
+If something cannot be verified, do not invent it. Use a deliberate fallback and report the limitation.
+
+First give me a short implementation plan, then build the complete website. Inspect and refine the actual preview before declaring the task complete.
+
+The final experience should feel like a cinematic digital film devoted exclusively to Sara Himeji: thoughtful, adorable in the right moments, visually expressive, and memorable.
