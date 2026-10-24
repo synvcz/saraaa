@@ -37,7 +37,7 @@ jobs:
       - name: Build Sara Himeji
         run: pnpm --filter @workspace/sara-himeji build
         env:
-          BASE_PATH: /sara/
+          BASE_PATH: /saraaa/
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
