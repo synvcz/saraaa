@@ -46,7 +46,7 @@ Scene 05 contains explicitly provisional creator-perspective copy. It is editabl
 
 ## Content and visual assets
 
-The factual profile and episode information are attributed to the linked official sources in the final scene; interpretive comments are explicitly labeled and the director’s view is attributed to the production interview. All visual compositions are typographic and CSS-only. No artwork is embedded: the official profile image was not used because permission and visual integrity could not be confirmed. There are no generated images, fan art, or image placeholders.
+The factual profile and episode information are attributed to the linked official sources in the final scene; interpretive comments are explicitly labeled and the director’s view is attributed to the production interview. Scene 04 displays one visually verified, solo Sara portrait directly from the [official English character profile](https://rascaldoesnotdream.com/santaclaus/); the image is remote and is not copied into this repository. The profile does not state an explicit reuse license, so confirm rights before public publication. The additional official memorial visual and wallpaper URLs investigated returned 403 from this environment and were not used. No generated images or fan art are included; all other visual compositions are typographic and CSS-led.
 
 ## Checks
 

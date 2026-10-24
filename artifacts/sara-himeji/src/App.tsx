@@ -28,27 +28,74 @@ function App() {
     const nodes = scenes
       .map(({ id }) => document.getElementById(id))
       .filter((node): node is HTMLElement => node !== null);
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible) setActiveScene(visible.target.id);
-      },
-      { rootMargin: '-25% 0px -45% 0px', threshold: [0, 0.15, 0.35, 0.6] },
-    );
-    nodes.forEach((node) => observer.observe(node));
+    const updateActiveScene = () => {
+      if (!nodes.length) return;
+
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      if (window.scrollY <= 1) {
+        setActiveScene(scenes[0].id);
+        return;
+      }
+      if (maxScroll > 0 && window.scrollY >= maxScroll - 1) {
+        setActiveScene(scenes[scenes.length - 1].id);
+        return;
+      }
+
+      const focusLine = window.innerHeight / 2;
+      const sceneAtFocus = nodes.find((node) => {
+        const bounds = node.getBoundingClientRect();
+        return bounds.top <= focusLine && bounds.bottom > focusLine;
+      });
+      if (sceneAtFocus) {
+        setActiveScene(sceneAtFocus.id);
+        return;
+      }
+
+      let nearestScene: HTMLElement | undefined;
+      let nearestDistance = Number.POSITIVE_INFINITY;
+      nodes.forEach((node) => {
+        const bounds = node.getBoundingClientRect();
+        const distance =
+          focusLine < bounds.top
+            ? bounds.top - focusLine
+            : focusLine - bounds.bottom;
+        if (distance < nearestDistance) {
+          nearestScene = node;
+          nearestDistance = distance;
+        }
+      });
+      if (nearestScene) setActiveScene(nearestScene.id);
+    };
+
+    let observer: IntersectionObserver | undefined;
+    const observeScenes = () => {
+      observer?.disconnect();
+      const focusLine = Math.floor(window.innerHeight / 2);
+      const bottomMargin = Math.max(0, window.innerHeight - focusLine - 1);
+      observer = new IntersectionObserver(updateActiveScene, {
+        rootMargin: `-${focusLine}px 0px -${bottomMargin}px 0px`,
+        threshold: 0,
+      });
+      nodes.forEach((node) => observer?.observe(node));
+      updateActiveScene();
+    };
     const updateProgress = () => {
       const scrollable = document.documentElement.scrollHeight - window.innerHeight;
       setProgress(scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0);
     };
+    const handleResize = () => {
+      updateProgress();
+      observeScenes();
+    };
+
+    observeScenes();
     updateProgress();
     window.addEventListener('scroll', updateProgress, { passive: true });
-    window.addEventListener('resize', updateProgress);
+    window.addEventListener('resize', handleResize);
     return () => {
-      observer.disconnect();
+      observer?.disconnect();
       window.removeEventListener('scroll', updateProgress);
-      window.removeEventListener('resize', updateProgress);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -136,7 +183,7 @@ function App() {
               <h2 className="section-heading serif reveal" id="about-title">About Sara</h2>
               <p className="lead reveal delay-1">An honor student with an easy warmth—and a story that asks us to look a little closer.</p>
               <p className="reveal delay-2">
-                Sara Himeji is a first-year student at Minegahara High School. She attends the cram school where an instructor works part-time. Her official profile describes her as friendly, with an effortless ability to befriend people.
+                Sara Himeji is a first-year student at Minegahara High School. She attends the cram school where an instructor works part-time. Her official profile describes her as friendly, with an effortless ability to befriend people. There is something sweet and endearing in that easy closeness; it makes her brightness feel both charming and distinctly her own.
               </p>
               <p className="reveal delay-2">
                 When a previous instructor leaves, Sara takes an interest in the instructor who remains. That shift is the starting point of her place in <em>Rascal Does Not Dream of Santa Claus</em>: a student whose brightness sits beside a more private uncertainty.
@@ -219,7 +266,21 @@ function App() {
               </div>
             </article>
             <article className="detail-stage reveal" data-motion="scale">
-              <div className="detail-mark" aria-hidden="true"><span className="serif">◌</span></div>
+              <figure className="detail-mark portrait-mark">
+                <img
+                  className="sara-portrait"
+                  src="https://rascaldoesnotdream.com/santaclaus/assets/img/character/character_img10_sara.png"
+                  alt="Sara Himeji in her Minegahara High School uniform, shown alone."
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption className="portrait-credit">
+                  Official character image ·{' '}
+                  <a href="https://rascaldoesnotdream.com/santaclaus/" target="_blank" rel="noreferrer">
+                    source
+                  </a>
+                </figcaption>
+              </figure>
               <div className="detail-copy">
                 <span className="eyebrow">03 / AN EXPRESSION, NOT A CODE</span>
                 <h3>Expressive eyes</h3>
@@ -234,7 +295,7 @@ function App() {
                 <p>June 6 is the birthday listed on her official profile. This composition gives that fact a little space—not a hidden meaning, just a small detail worth remembering.</p>
               </div>
             </article>
-            <p className="annotation details-note">Visual direction is typographic and CSS-only. No character artwork is used.</p>
+            <p className="annotation details-note">One official Sara portrait; all other visual compositions remain typographic and CSS-led.</p>
           </div>
         </section>
 
@@ -271,7 +332,7 @@ function App() {
           </div>
           <footer className="site-footer">
             <p className="disclaimer">
-              This is an unofficial fan-made project and is not affiliated with Aniplex, KADOKAWA, or the series’ production committee. No official artwork is used: permission and visual integrity could not be confirmed for the profile image. All visuals here are typographic and CSS-only.
+              This is an unofficial fan-made project and is not affiliated with Aniplex, KADOKAWA, or the series’ production committee. Sara’s solo portrait is served directly from her official character profile and linked to its source; this site does not host a copied image file. All other visual compositions are typographic and CSS-led.
             </p>
             <nav className="sources" aria-label="Sources">
               <a href="https://rascaldoesnotdream.com/santaclaus/" target="_blank" rel="noreferrer" data-testid="link-source-profile">Official character profile</a>
